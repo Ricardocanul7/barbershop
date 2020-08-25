@@ -13,8 +13,12 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+// Pagina visible para todos los clientes
+Route::resource('/', 'LandingController');
 
-Route::get('/', function () {
+
+//pagina administrativa para dashboard del dueño
+Route::get('admin', function () {
     return view('welcome');
 });
 
@@ -22,4 +26,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('landing', 'LandingController');
+
