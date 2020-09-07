@@ -9,7 +9,7 @@
 
     <div class="row">
         <div class="col">
-            <button class="btn btn-primary">Agregar</button>
+            <a href="{{ url('clients/create') }}" class="btn btn-primary">Agregar</a>
         </div>
     </div>
 

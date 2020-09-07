@@ -4,8 +4,11 @@ namespace App\Http\Controllers;
 
 use App\User;
 use Illuminate\Http\Request;
-use Illuminate\Support\Collection;
-use Illuminate\Pagination\LengthAwarePaginator as Paginator;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Validation\ValidationException;
+use Symfony\Component\Console\Input\Input;
 
 class ClientsController extends Controller
 {
@@ -39,7 +42,7 @@ class ClientsController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.clients.create');
     }
 
     /**
@@ -50,7 +53,19 @@ class ClientsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'password' => 'required',
+            'email' => 'required|email',
+            'mobile_phone' => 'required|numeric',
+            'birth_date' => 'date'
+        ]);
+        $data = $request->except('_token');
+
+        $data['password'] = Hash::make($data['password']);
+        $user = User::create($data);
+        $user->assignRole('client');
+        return redirect('clients')->with('mensaje', 'cliente agregado');
     }
 
     /**
