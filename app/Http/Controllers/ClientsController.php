@@ -87,7 +87,9 @@ class ClientsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $param = [];
+        $param['client'] = User::findOrFail($id);
+        return view('admin.clients.edit', $param);
     }
 
     /**
@@ -110,6 +112,7 @@ class ClientsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        User::destroy($id);
+        return redirect('clients');
     }
 }

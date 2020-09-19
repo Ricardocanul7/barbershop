@@ -39,9 +39,14 @@
                             <td>{{ $client->mobile_phone}}</td>
                             <td>{{ $client->created_at}}</td>
                             <td>
-                                <button class="btn btn-info">{{'Detalles'}}</button>
-                                <button class="btn btn-warning">{{'Editar'}}</button>
-                                <button class="btn btn-danger">{{'Borrar'}}</button>
+                                {{-- <a class="btn btn-info">{{'Detalles'}}</a> --}}
+                                <a href=" {{ url('clients/' . $client->id . '/edit') }} " class="btn btn-warning">{{'Editar'}}</a>
+                                <form action=" {{ url('clients/' . $client->id) }} " method="POST" style="display: inline">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn btn-danger" onclick="return confirm('¿Estas seguro?')">{{'Borrar'}}</button>
+                                </form>
+
                             </td>
                         </tr>
                     @endforeach
