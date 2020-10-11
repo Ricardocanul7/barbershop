@@ -46,7 +46,7 @@
                 <div class="navbar-header">
                     <!-- Logo starts -->
                     <a class="navbar-brand" href="#">
-                        <img src="images/small-logo.png" alt="Barbershop" />
+                        <img src="img\ROW_BARBERSHOP_LOGO_TRASPARENT.png" alt="Barbershop" height="50px" width="50px"/>
                     </a>
                     <!-- Logo Ends -->
 

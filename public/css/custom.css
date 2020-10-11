@@ -329,7 +329,7 @@ a:focus{
 }
 
 .navbar-brand img{
-	filter: brightness(0) invert(1);
+	/* filter: brightness(0) invert(1); */
 	transition: all 0.3s;
 }
 
@@ -377,7 +377,7 @@ a:focus{
 	text-transform: uppercase;
 	color: #fff;
 	letter-spacing: 0.04em;
-	padding: 17px 15px 13px; 
+	padding: 17px 15px 13px;
 	position: relative;
 }
 
@@ -521,7 +521,7 @@ a:focus{
 .banner-info-single h3{
 	color: #fff;
 	text-transform: uppercase;
-	font-size: 20px; 
+	font-size: 20px;
 	margin-bottom: 6px;
 	letter-spacing: 0.18em;
 }
@@ -553,7 +553,7 @@ a:focus{
 }
 
 .about-image{
-	
+
 }
 
 .about-image:after{
@@ -888,7 +888,7 @@ a:focus{
 	transition: all 0.3s;
 }
 
-.testimonial-slider .owl-nav .owl-next{	
+.testimonial-slider .owl-nav .owl-next{
 	float: right;
 	padding-left: 3px;
 }
@@ -930,7 +930,7 @@ a:focus{
 }
 
 .contact-form{
-	
+
 }
 
 .contact-form .form-control{
@@ -960,7 +960,7 @@ a:focus{
 footer{
 	background: #212121;
 	padding: 60px 0;
-	
+
 }
 
 .footer-social{
@@ -1039,59 +1039,59 @@ footer{
 ****************************************/
 
 @media only screen and (max-width: 991px) {
-	
+
 	.navbar-default .navbar-nav>li>a{
 		font-size: 13px;
-		padding: 15px 8px 10px;		
+		padding: 15px 8px 10px;
 	}
-	
+
 	.service-single{
 		margin-bottom: 40px;
 	}
-	
+
 	.main-title h2{
 		font-size: 36px;
 	}
-	
+
 	.team-box{
 		max-width: 480px;
 		margin: 0 auto 30px;
 	}
-	
+
 	.store-image{
 		max-width: 568px;
 		margin: 0 auto;
 	}
 }
-	
+
 
 /* Mobile Layout */
 @media only screen and (max-width: 767px){
-	
+
 	#responsive-menu{
 		display: block;
-		
+
 	}
-	
+
 	.navbar-brand img{
 		float: left;
 	}
-	
+
 	.navbar{
 		padding: 2px 0;
 		min-height: auto;
 	}
-	
+
 	.navbar-header{
 		padding: 8px 0;
 	}
-	
+
 	.navbar-header:after{
 		content: '';
 		display: block;
 		clear: both;
 	}
-	
+
 	.slicknav_menu{
 		margin-left: -15px;
 		margin-right: -15px;
@@ -1102,7 +1102,7 @@ footer{
 	.slicknav_menu ul{
 		background: #be9342;
 	}
-	
+
 	.slicknav_menu li{
 		padding: 0 10px;
 	}
@@ -1111,7 +1111,7 @@ footer{
 		color: #24292f;
 		background: none !important;
 	}
-	
+
 	.slicknav_menu a{
 		color: #fff;
 		padding-top: 6px;
@@ -1119,31 +1119,31 @@ footer{
 		text-transform: uppercase;
 		border: 1px solid transparent;
 	}
-	
+
 	.slicknav_menu a a{
 		border: none !important;
 	}
-	
+
 	.slicknav_nav .slicknav_row:hover,
 	.slicknav_nav a:hover{
 		color: #24292f;
 	}
-	
+
 	.slicknav_menu  .active a{
 		color: #24292f !important;
 	}
-	
+
 	.slicknav_btn{
 		padding: 4px 4px;
 		background: none;
 	}
-	
+
 	.slicknav_icon-bar{
 		box-shadow: none;
 		border-radius: 0;
 		margin: 2px 0;
 	}
-	
+
 	.banner,
 	.service,
 	.ourteam,
@@ -1151,15 +1151,15 @@ footer{
 	.testimonial{
 		padding: 60px 0;
 	}
-	
+
 	.gallery{
 		padding-top: 60px;
 	}
-	
+
 	.header-banner p{
 		font-size: 20px;
 	}
-	
+
 	.header-banner h3{
 		font-size: 26px;
 	}
@@ -1167,11 +1167,11 @@ footer{
 	.header-banner h3 br{
 		display: none;
 	}
-	
+
 	.main-title h2{
 		font-size: 26px;
 	}
-	
+
 	.about-img-single{
 		width: 33.33%;
 		text-align: center !important;
@@ -1182,18 +1182,18 @@ footer{
 	.about-img-single img{
 		width: auto !important;
 	}
-	
+
 	.about-desc{
 		margin-top: 30px;
 	}
-	
+
 	.gallery-overlay{
 		top: 10px;
 		right: 10px;
 		bottom: 10px;
 		left: 10px;
 	}
-	
+
 	.gallery-info p{
 		padding: 10px;
 		line-height: 1.5em;
@@ -1205,48 +1205,48 @@ footer{
 
 /* Small Mobile Layout */
 @media only screen and (max-width: 480px) {
-	
+
 	.main-title{
 		margin-bottom: 50px;
 	}
-	
+
 	.main-title h2{
 		font-size: 20px;
 	}
-	
+
 	.contact-form-title{
 		font-size: 20px;
 	}
-	
+
 	.banner-info-single h3{
 		font-size: 18px;
 	}
-	
+
 	.banner-info-single p{
 		font-size: 12px;
 	}
-	
+
 	.banner-info-single .icon-box{
 		font-size: 44px;
 	}
-	
+
 	.team-box .team-entry p{
 		font-size: 14px;
 	}
-	
+
 	.team-box .team-entry h3{
 		font-size: 18px;
 	}
-	
+
 	.team-social a{
 		font-size: 16px;
 	}
-	
+
 	.price-item,
 	.price-amount{
 		font-size: 16px;
 	}
-	
+
 	.testimonial-single h3{
 		font-size: 18px;
 	}
