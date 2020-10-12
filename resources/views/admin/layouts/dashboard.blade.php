@@ -29,6 +29,9 @@
 
     <!-- Custom Theme Style -->
     <link href="{{ asset('build/css/custom.min.css')}}" rel="stylesheet">
+
+    <!-- SASS Compiled file -->
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
 </head>
 
 <body class="nav-md">
@@ -244,7 +247,7 @@
                                     aria-labelledby="navbarDropdown1">
                                     <li class="nav-item">
                                         <a class="dropdown-item">
-                                            <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                            <span class="image"><img src="{{ asset('images/img.jpg')}}" alt="Profile Image" /></span>
                                             <span>
                                                 <span>John Smith</span>
                                                 <span class="time">3 mins ago</span>
@@ -257,7 +260,7 @@
                                     </li>
                                     <li class="nav-item">
                                         <a class="dropdown-item">
-                                            <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                            <span class="image"><img src="{{ asset('images/img.jpg')}}" alt="Profile Image" /></span>
                                             <span>
                                                 <span>John Smith</span>
                                                 <span class="time">3 mins ago</span>
@@ -270,7 +273,7 @@
                                     </li>
                                     <li class="nav-item">
                                         <a class="dropdown-item">
-                                            <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                            <span class="image"><img src="{{ asset('images/img.jpg')}}" alt="Profile Image" /></span>
                                             <span>
                                                 <span>John Smith</span>
                                                 <span class="time">3 mins ago</span>
@@ -283,7 +286,7 @@
                                     </li>
                                     <li class="nav-item">
                                         <a class="dropdown-item">
-                                            <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                            <span class="image"><img src="{{ asset('images/img.jpg')}}" alt="Profile Image" /></span>
                                             <span>
                                                 <span>John Smith</span>
                                                 <span class="time">3 mins ago</span>
@@ -328,8 +331,10 @@
         </div>
     </div>
 
-    <!-- jQuery -->
-    <script src="{{ asset('vendors/jquery/dist/jquery.min.js')}}"></script>
+    <!-- JS Compiled files for React -->
+    <script src="{{asset('js/app.js')}}"></script>
+    {{-- <!-- jQuery -->
+    <script src="{{ asset('vendors/jquery/dist/jquery.min.js')}}"></script> --}}
     <!-- Bootstrap -->
     <script src="{{ asset('vendors/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
     <!-- FastClick -->
@@ -368,6 +373,8 @@
 
     <!-- Custom Theme Scripts -->
     <script src="{{ asset('build/js/custom.min.js')}}"></script>
+
+
 
 </body>
 
