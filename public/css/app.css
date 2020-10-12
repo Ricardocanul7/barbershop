@@ -6,6 +6,10 @@
   position: fixed;
 }
 
+body .container.body .right_col {
+  background: gainsboro;
+}
+
 .center-login-card {
   margin: 15vw 0;
 }
@@ -13,5 +17,21 @@
 .bg-login {
   background: goldenrod;
   height: calc(100vh - 56px);
+}
+
+.card-footer-buttons {
+  margin-top: 1rem;
+}
+
+.card-footer-buttons .col {
+  display: flex;
+  justify-content: center;
+}
+
+.custom-fields {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+  width: 25rem;
 }
 

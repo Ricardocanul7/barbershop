@@ -15,7 +15,7 @@
 
     <div class="row">
         <div class="col">
-            <table class="table table-striped">
+            <table class="table table-striped table-dark">
                 <thead>
                   <tr>
                     <th scope="col">#</th>

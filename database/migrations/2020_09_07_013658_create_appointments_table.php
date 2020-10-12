@@ -23,9 +23,9 @@ class CreateAppointmentsTable extends Migration
             $table->string('client_contact');
             $table->unsignedBigInteger('worker_id');
             $table->unsignedBigInteger('service_id');
-            $table->unsignedBigInteger('creator_id');
+            $table->unsignedBigInteger('creator_id')->nullable(); // can be created by the client itself
 
-            $table->foreign('client_id')->references('id')->on('users');
+            $table->foreign('client_id')->references('id')->on('clients');
             $table->foreign('worker_id')->references('id')->on('users');
             $table->foreign('creator_id')->references('id')->on('users');
             $table->foreign('service_id')->references('id')->on('services');
