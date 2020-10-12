@@ -20,9 +20,11 @@ Route::resource('/', 'LandingController');
 //pagina administrativa para dashboard del dueño
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
 Route::get('admin', function(){
     return redirect('login');
 });
 
-Route::resource('clients', 'ClientsController');
+Route::prefix('admin')->group(function(){
+    Route::get('home', 'HomeController@index')->name('home');
+    Route::resource('clients', 'ClientsController');
+});
