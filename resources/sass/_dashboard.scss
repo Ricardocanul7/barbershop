@@ -1,0 +1,149 @@
+$bg-navbar : rgb(36, 36, 36);
+$sidebar-size : 250px;
+$text-color : #f5f3f4;
+$text-hover : #8d99ae;
+
+// Navbar height 66px
+.nav-top{
+    display: flex;
+    flex-direction: row;
+    background: $bg-navbar;
+    // border: 1px solid black;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+
+    .burger-menu{
+        display: flex;
+        justify-content: center;
+        .burger-button{
+            outline: none;
+            background: transparent;
+            border: none;
+            height: 65px;
+            width: 65px;
+
+            &:active{
+                background: grey;
+                border-radius: 50%;
+            }
+
+            ion-icon{
+                color: white;
+                font-size: 30px;
+            }
+        }
+    }
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        align-items: center;
+        margin: 0.5rem 0;
+
+        li{
+            margin: 0 5px;
+            a{
+                color: $text-color;
+            }
+        }
+
+        img{
+            background: white;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            border: 1px solid grey;
+        }
+    }
+}
+
+.content-area{
+    display: flex;
+    flex : $sidebar-size 1;
+    flex-direction: row;
+}
+
+aside{
+    background-color: #161a1d;
+    // background-color: $bg-navbar;
+    // position: relative;
+    z-index: 2;
+    top: 0px;
+    bottom: 0px;
+    left: 0;
+    width: $sidebar-size;
+    height: 100vh;
+    position: fixed;
+    transition: .3s ease;
+    // display: none;
+
+    .navbar-area{
+        display: flex;
+        justify-content: start;
+        height: 66px;
+        border-bottom: 1px solid grey;
+        background: $bg-navbar;
+
+        .close-button{
+            outline: none;
+            background: transparent;
+            border: none;
+            padding: 18px;
+
+            &:active{
+                background: grey;
+                border-radius: 50%;
+            }
+
+            ion-icon{
+                color: $text-color;
+                font-size: 30px;
+            }
+        }
+    }
+
+    .profile-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 8rem;
+        padding: 1rem;
+        // border: 1px solid grey; // temp
+        background: #22223b;
+
+        img{
+            background: white;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            border: 1px solid grey;
+        }
+
+        .username{
+            padding: 5px;
+            color: $text-color;
+        }
+    }
+
+    ul{
+        margin-top: 1rem;
+        li{
+            a{
+                color: $text-color;
+                &:hover{
+                    text-decoration: none;
+                    color: $text-hover;
+                }
+            }
+        }
+    }
+}
+
+main{
+    padding: 1rem;
+    transition: .3s ease;
+    margin-left: 250px;
+}

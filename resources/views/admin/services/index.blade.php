@@ -4,7 +4,7 @@
 
 <div class="row">
     <div class="col">
-        <h1>Clientes</h1>
+        <h1>Servicios</h1>
     </div>
 </div>
 
